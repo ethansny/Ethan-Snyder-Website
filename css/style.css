@@ -25,6 +25,7 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     transition: transform 0.5s ease-out, max-height 0.5s ease-out;
 
 
@@ -204,66 +205,12 @@ h4{
 
 /* Styling for table/desktop sized screen */
 @media only screen and (min-width:850px){
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-.logotext{
-    display: flex;
-    justify-content: center;
-    font-size: 200%;
-}
-
-.nav{
-    width: 60%;
-}
-
-nav ul{
-    padding-left: 10%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-
-nav ul li{
-    padding: 1%;
-    border-radius: 8px;
-    transition: all 0.3s ease 0s;
-
-}
-
-nav ul li:hover{
-    background-color: #e6e6e6;
-    color: black;
-}
-
-nav ul li{
-    font-size: 200%;
-    font-weight: bold;
-}
 
 
 
-.contact{
-    padding: 1%;
-    border-radius: 8px;
-    transition: all 0.3s ease 0s;
-    color: black;
-    font-size: 200%;
-    font-weight: bold;
-    margin-right: 10%;
-    border: 3px solid black;
-}
 
-.contact:hover{
-    background-color: black;
-    color: white;
 
-}
+
+
 
 }
