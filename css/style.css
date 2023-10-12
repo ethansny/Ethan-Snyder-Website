@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 /* Navigation Bar for Mobile */
 
 header {
@@ -45,6 +48,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     max-height: 100vh;
     transform: translateX(0);
 }
@@ -69,6 +73,12 @@ ul li{
     text-decoration: underline;
     transition: all 0.3s ease 0s;
 
+}
+
+ul{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .contact{
