@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title></title>
+    <title>Ethan Snyder</title>
 </head>
 
 <body>
@@ -23,9 +26,9 @@
                                 <p class="logotext">ES</p>
                             </div>
                         </li>
-                        <li class="Design"><a href="design.html">Design</a></li>
-                        <li class="Photography"><a href="photography.html">Photography</a></li>
-                        <li class="About"><a href="about.html">About</a></li>
+                        <li class="Design"><a href="#featured-id">Design</a></li>
+                        <li class="Photography"><a href="#photos-featured-id">Photography</a></li>
+                        <li class="About"><a href="#about-id">About</a></li>
                         <li class="contact"><a href="about.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -36,38 +39,53 @@
         <h1>Ethan Snyder</h1>
         <div class="intro">
             <img class="ethanphoto" src="./images/ethan.JPG" alt="photo of Ethan Snyder">
-            <p>Hello, I'm Ethan Snyder. Here, you can find some of what I have been working on.</p>
+            <p>Hello, my name is <span class = "EthanText">Ethan Snyder.</span> Here, you can find my design work and  other creative endeavors.</p>
         </div>
-        <div class="featured">
+        <div class="featured" id="featured-id">
             <h2>Featured</h2>
             <div class="design-featured">
-                <div class="jcscontainer">
+                <a href="https://ethansny.github.io/JasonSnyderPhotography/">
+                    <div class="jcscontainer">
+                        <img class="jcsphoto" src="./images/jcsweb.png" alt="photo of Ethan Snyder">
+                        <div class="jcstext">
+                            <h4>Jason Snyder Photographer</h4> <br>Self Employed photographer based in Pittsburgh PA
+                        </div>
+                    </div>
+                </a>
+                <!-- <div class="jcscontainer">
                     <img class="jcsphoto" src="./images/jcsweb.png" alt="photo of Ethan Snyder">
                     <div class="jcstext">
                         <h4>Jason Snyder Photographer</h4> <br>Self Employed photographer based in Pittsburgh PA
                     </div>
-                </div>
-                <div class="jcscontainer">
-                    <img class="jcsphoto" src="./images/jcsweb.png" alt="photo of Ethan Snyder">
-                    <div class="jcstext">
-                        <h4>Jason Snyder Photographer</h4> <br>Self Employed photographer based in Pittsburgh PA
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="photos">
             <h2>Photos</h2>
-            <div class="photo-featured">
+            <div class="photo-featured" id="photos-featured-id">
                 <div class="photos-container">
-                    <div><img class="" src="./images/beachart.jpg" alt=""></div>
+                    <div><img class="" src="./images/cherrytree.jpg"></div>
                     <div><img class="" src="./images/canadaflag.jpg" alt=""></div>
-                    <div><img class="" src="./images/cherrytree.jpg" alt=""></div>
-                    <div><img class="" src="./images/mosstree.jpg" alt=""></div>
+
+                    <div><img class="" src="./images/beachart.jpg" alt=""></div>
+
                 </div>
             </div>
         </div>
-        <div class="about"></div>
+        <div class ="about" id = "about-id">
+            <h2>About</h2>
+        <div class="about-container">
+            <p class = "graduate-text">A graduate student at the University of Michigan, an outdoor enthusiast, and lover of art and music.</p><br>
+            <p class = "persian-quote">تو کز محنت دیگران بی‌غمی
+                نشاید که نامت نهند آدمی<br>
+            </p><br>
+            <p class = "english-quote">"If you have no sympathy for human pain
+            The name of human you can not rertain" -Bani Adam</p>
+        </div>
+    </div>
     </main>
 </body>
-
+<footer>
+    <p>Ethan Snyder &copy; 2023. All Rightes Reserved</p>
+</footer>
 </html>

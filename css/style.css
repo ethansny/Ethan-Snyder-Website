@@ -1,6 +1,27 @@
 html {
     scroll-behavior: smooth;
   }
+
+/* font */
+body{font-family: 'Tilt Neon', sans-serif;}
+footer{
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+/* Universal background and text color */
+
+.EthanText, h1{
+    color: rgb(0, 129, 84);
+}
+
+.featured, .about{
+    background-color: rgb(0, 0, 37);
+}
+
+footer{
+    background-color: rgb(0, 129, 84);
+}
+
 /* Navigation Bar for Mobile */
 
 header {
@@ -131,20 +152,21 @@ h1{
 }
 
 .ethanphoto:hover{
-    border: 10px solid #e6e6e6;
+    border: 10px solid rgb(0, 129, 84);
 }
 
 
 /* Styling for text below photo */
 
 .intro p{
+    font-size: 400%;
+    width: 70%;
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: 400%;
     margin-left:auto;
     margin-right: auto;
-    padding-left: 10%;
 }
+
 
 .intro{
     border-bottom: black 1px solid;
@@ -153,16 +175,15 @@ h1{
 
 /* Styling for the featured sections */
 
-.featured, .photos{
-    background-color: black;
+.featured, .photos, .about{
     height: auto;
     padding-top: 8%;
 }
 
-h2{
+.featured h2{
     text-align: center;
     padding-top: 20px;
-    font-size: 350%;
+    font-size: 450%;
     color: white;
     padding-bottom: 20px;
 }
@@ -180,12 +201,15 @@ h2{
 
 }
 
+/* jcs featured styling */
+
 .jcscontainer{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
 }
 
 
@@ -201,17 +225,79 @@ h2{
     text-align: center;
     font-size: 170%;
 }
+/* styling for hero photos */
 
-.photos-container div img {
+.photos h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 450%;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.photos{
+    background-color: white;
+    margin-bottom: 3%;
+}
+
+.photos-container img {
     width: 100%;
-    padding-top: 10px;
+    margin-top: 10px;
+    border: solid black 3px;
 }
 h4{
     font-size: 150%;
 }
 
 
-/* Styling for  */
+/* Styling for footer */
+footer{
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 200%;
+}
+
+/* About Styling */
+
+.about h2{
+    text-align: center;
+    font-size: 450%;
+    color: white;
+}
+
+.about-container{
+    font-size: 300%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 5%;
+    color: white;
+
+}
+
+
+.graduate-text{
+    grid-column: 2/12;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.persian-quote{
+    grid-column: 2/10;
+    grid-row: 2/3;
+    color:rgb(0, 129, 84) ;
+}
+.english-quote{
+    grid-column: 2/12;
+    grid-row: 3/4;
+    text-align: center;
+}
+
+.english-quote, .persian-quote, .graduate-text{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 /* Styling for table/desktop sized screen */
 @media only screen and (min-width:850px){
