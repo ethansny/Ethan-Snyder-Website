@@ -41,59 +41,17 @@ a {
 
 
 
-#menu-toggle {
-    display: none;
-    z-index: 10;
-}
-
-.menu-icon img{
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    top: 2%;
-    right: 3%;
-    z-index: 10;
-}
-
-.menu-icon {
-    cursor: pointer;
-    background-image: url('../images/burger-menu.png');
-    position: fixed;
-    top: 2%;
-    right: 3%;
-    z-index: 10;
-}
-
-.test{
-    display: flex;
-    flex-direction: column;
-    max-height: 0vh;
-    overflow: hidden;
-    width: 60vw;
-
-    z-index: -1;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    transition: transform 0.5s ease-out, max-height 0.5s ease-out;
-
-}
-
 /* Makes menu height none-0 when #menu-toggle is checked */
-#menu-toggle:checked ~ .test {
-    display: flex;
-    flex-direction: column;
-    max-height: 100vh;
-    width: 60vw;
-    z-index: -1;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    transform: translateX(0);
-}
 
 /* Syles mobile nav to look pretty */
 
+
+
 .nav{
 padding-bottom: 10%;
+display: flex;
+margin-left: 15
+px;
 }
 
 
@@ -114,13 +72,14 @@ ul li{
 ul{
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .contact{
 text-decoration: none;
 border: 3px solid black;
 border-radius: 8px;
+padding: 5%;
 }
 
 li.contact:hover{
@@ -209,6 +168,8 @@ h1{
     grid-template-columns: 1fr;
     color: white;
     width:84vw;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 8%;
     padding-right: 8%;
     gap: 10px;

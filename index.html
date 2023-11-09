@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Ethan Snyder</title>
 </head>
@@ -16,9 +17,9 @@
 
     <header>
         <div class="header">
+            <label for="menu-toggle" class="menu-icon"><img src="./images/burger-menu.png"></label>
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"><img src="./images/burger-menu.png" ></label>
-            <div class="test">
+            <div class="nav_div">
                 <nav class="nav" id="menu">
                     <ul>
                         <li>
@@ -38,8 +39,9 @@
     <main>
         <h1>Ethan Snyder</h1>
         <div class="intro">
-            <img class="ethanphoto" src="./images/ethan.JPG" alt="photo of Ethan Snyder">
-            <p>Hello, my name is <span class = "EthanText">Ethan Snyder.</span> Here, you can find my design work and  other creative endeavors.</p>
+            <img class="ethanphoto" src="./images/ethan.jpeg" alt="photo of Ethan Snyder">
+            <p>Hello, my name is <span class="EthanText">Ethan Snyder.</span> Here, you can find my design work and
+                other creative endeavors.</p>
         </div>
         <div class="featured" id="featured-id">
             <h2>Featured</h2>
@@ -72,20 +74,22 @@
                 </div>
             </div>
         </div>
-        <div class ="about" id = "about-id">
+        <div class="about" id="about-id">
             <h2>About</h2>
-        <div class="about-container">
-            <p class = "graduate-text">A graduate student at the University of Michigan, an outdoor enthusiast, and lover of art and music.</p><br>
-            <p class = "persian-quote">تو کز محنت دیگران بی‌غمی
-                نشاید که نامت نهند آدمی<br>
-            </p><br>
-            <p class = "english-quote">"If you have no sympathy for human pain
-            The name of human you can not rertain" -Bani Adam</p>
+            <div class="about-container">
+                <p class="graduate-text">A graduate student at the University of Michigan, an outdoor enthusiast, and
+                    lover of art and music.</p><br>
+                <p class="persian-quote">تو کز محنت دیگران بی‌غمی
+                    نشاید که نامت نهند آدمی<br>
+                </p><br>
+                <p class="english-quote">"If you have no sympathy for human pain
+                    The name of human you can not rertain" -Bani Adam</p>
+            </div>
         </div>
-    </div>
     </main>
 </body>
 <footer>
     <p>Ethan Snyder &copy; 2023. All Rights Reserved</p>
 </footer>
+
 </html>
