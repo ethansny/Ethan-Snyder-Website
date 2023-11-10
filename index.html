@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Ethan Snyder</title>
 </head>
@@ -17,29 +18,23 @@
 
     <header>
         <div class="header">
-            <label for="menu-toggle" class="menu-icon"><img src="./images/burger-menu.png"></label>
-            <input type="checkbox" id="menu-toggle">
-            <div class="nav_div">
-                <nav class="nav" id="menu">
-                    <ul>
-                        <li>
-                            <div>
-                                <p class="logotext">ES</p>
-                            </div>
-                        </li>
-                        <li class="Design"><a href="#featured-id">Design</a></li>
-                        <li class="Photography"><a href="#photos-featured-id">Photography</a></li>
-                        <li class="About"><a href="#about-id">About</a></li>
-                        <li class="contact"><a href="about.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <label for="menu-toggle" class="custom-checkbox"><img src="./images/bars-solid.svg" id="hamburger"></label>
+            <input type="checkbox" id="menu-toggle" class="custom-checkbox">
+            <nav class="nav" id="menu">
+                <ul>
+                    <li class="active" id="home_link"><a href="index.html">Home</a></li>
+                    <li id="Design"><a href="projects.html">Design</a></li>
+                    <li id="Photography"><a href="#photos-featured-id">Photography</a></li>
+                    <li id="About"><a href="#about-id">About</a></li>
+                    <li id="contact"><a href="about.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <h1>Ethan Snyder</h1>
         <div class="intro">
-            <img class="ethanphoto" src="./images/ethan.jpeg" alt="photo of Ethan Snyder">
+            <img class="ethanphoto" src="./images/ethan_mask.jpg" alt="photo of Ethan Snyder">
             <p>Hello, my name is <span class="EthanText">Ethan Snyder.</span> Here, you can find my design work and
                 other creative endeavors.</p>
         </div>
@@ -66,11 +61,15 @@
             <h2>Photos</h2>
             <div class="photo-featured" id="photos-featured-id">
                 <div class="photos-container">
-                    <div><img class="" src="./images/cherrytree.jpg"></div>
-                    <div><img class="" src="./images/canadaflag.jpg" alt=""></div>
-
-                    <div><img class="" src="./images/beachart.jpg" alt=""></div>
-
+                    <a href="./images/cherrytree.jpg" target="blank" data-lightbox="home_photos" data-title="" data-alt="">
+                        <img class="" src="./images/cherrytree.jpg">
+                    </a>
+                    <a href="./images/canadaflag.jpg" target="blank" data-lightbox="home_photos" data-title="" data-alt="">
+                        <img class="" src="./images/canadaflag.jpg" alt="">
+                    </a>
+                    <a href="./images/beachart.jpg" target="blank" data-lightbox="home_photos" data-title="" data-alt="">
+                        <img class="" src="./images/beachart.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -87,6 +86,8 @@
             </div>
         </div>
     </main>
+    <script src="./js/javascript.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 <footer>
     <p>Ethan Snyder &copy; 2023. All Rights Reserved</p>

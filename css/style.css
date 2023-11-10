@@ -3,7 +3,11 @@ html {
   }
 
 /* font */
-body{font-family: 'Tilt Neon', sans-serif;}
+body{font-family: 'Tilt Neon', sans-serif;
+}
+
+
+
 footer{
     font-family: 'Tilt Neon', sans-serif;
 }
@@ -30,6 +34,7 @@ header {
 
 .header{
     width: 10vw;
+    margin-left: 5%;
 }
 
 a {
@@ -37,71 +42,72 @@ a {
     color: black;
 }
 
-/* Stlyes the navigation to be a clickable hamburger that causes it to expand when clicked */
+/* Sets the manu to be hidden, altered when clicked in Javascript */
+/* Also sets the hamburger to be centered and on the right */
 
 
+.custom-checkbox{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+}
 
-/* Makes menu height none-0 when #menu-toggle is checked */
+.custom-checkbox img{
+    height: 30px;
+    width: 30px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+#menu-toggle{
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
 
 /* Syles mobile nav to look pretty */
 
-
+#menu {
+    background-color: rgb(0, 159, 104);
+    position: fixed;
+    top: -100vh; /* Start off-screen */
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: top 0.5s ease-in-out;
+}
 
 .nav{
-padding-bottom: 10%;
-display: flex;
-margin-left: 15
-px;
+    display: flex;
 }
 
-
-.logotext{
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
     padding-top: 20%;
-    padding-bottom: 10%;
-    font-size: 200%;
 }
 
-ul li{
-    font-size: 150%;
+.nav ul li {
     padding: 10%;
-    text-decoration: underline;
-    transition: all 0.3s ease 0s;
-
+    font-size: 35px;
 }
 
-ul{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+.active{
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
 }
 
-.contact{
-text-decoration: none;
-border: 3px solid black;
-border-radius: 8px;
-padding: 5%;
-}
-
-li.contact:hover{
-    background-color: black;
-}
-
-li.contact:hover a{
+.active a {
     color: white;
-}
-
-.Design:hover, .Photography:hover, .About:hover{
-    text-decoration: none;
-
-}
-
-.contact{
-    margin-top: auto;
-}
-
-
-.nav, .contact{
-    transition: translateX(-100%)
 }
 
 /* Styling for content below menu bar */
@@ -116,7 +122,7 @@ h1{
 /* Style ethan hero photo */
 
 .ethanphoto{
-    width: 280px;
+    width: 320px;
     display: block;
     margin-left: auto;
     margin-right: auto;
