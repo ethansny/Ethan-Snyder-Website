@@ -18,6 +18,10 @@ footer{
     color: rgb(0, 129, 84);
 }
 
+#home_h1{
+    display: none;
+}
+
 .featured, .about{
     background-color: rgb(0, 0, 37);
 }
@@ -71,6 +75,11 @@ a {
     display: none;
 }
 
+header{
+    position: relative;
+    z-index: 1000;
+}
+
 
 
 /* Syles mobile nav to look pretty */
@@ -112,13 +121,8 @@ a {
 
 /* Styling for content below menu bar */
 
-h1{
-    text-align: center;
-    padding-top: 11%;
-    font-size: 270%;
-    display: none;
-}
 
+/* Styleing for home page */
 /* Style ethan hero photo */
 
 .ethanphoto{
@@ -237,44 +241,42 @@ h4{
 
 /* About Styling */
 
-.about h2{
-    text-align: center;
-    font-size: 300%;
-    color: white;
+#about_body{
+    background-color: rgb(75, 75, 75);
 }
 
-.about-container{
-    font-size: 180%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding-bottom: 5%;
-    color: white;
 
+.about_h1{
+    margin-left: 5%;
+    text-align: left;
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    margin-top: 20%;
 }
-
 
 .graduate-text{
-    grid-column: 2/12;
-    grid-row: 1/2;
-    text-align: center;
+    display: grid;
+    padding: 3%;
+    border-radius: 15px;
+    width: 45vw;
+    font-size: 120%;
+    color: white;
+    margin-top: 5px;
+    text-align:center;
+    align-content: center;
 }
 
-.persian-quote{
-    grid-column: 2/10;
-    grid-row: 2/3;
-    color:rgb(0, 129, 84) ;
+.text_boxes{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 175.5px 175.5px 175.5px 175.5px;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-top: 50px;
+    z-index: 1;
 }
-.english-quote{
-    grid-column: 2/12;
-    grid-row: 3/4;
-    text-align: center;
-}
-
-.english-quote, .persian-quote, .graduate-text{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
 /* Styling for footer */
 footer{
     color: white;
@@ -282,6 +284,18 @@ footer{
     padding: 2%;
     font-size: 125%;
 }
+.text_boxes div{
+    background-color: rgb(33, 33, 33);
+    height: 175.5px;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+}
+
+.text_boxes div:hover{
+    background-color: rgb(0, 129, 84);
+
+}
+
 
 /* Styling for table/desktop sized screen */
 @media only screen and (min-width:850px){
