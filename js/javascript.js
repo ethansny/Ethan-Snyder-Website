@@ -98,3 +98,20 @@ divs.forEach(function (div) {
         text.style.transform = "translate(" + deltaX * 0.2 + "px, " + deltaY * 0.2 + "px)";
     });
 });
+
+var following = document.getElementById("following");
+var topstories = document.getElementById("topstories");
+
+if (following) {
+    window.addEventListener("load", function() {
+        this.setInterval(function() {
+        if (following.classList.contains("hidden")) {
+            following.classList.remove("hidden");
+            topstories.classList.add("hidden");
+        } else {
+            following.classList.add('hidden');
+            topstories.classList.remove('hidden');
+        }}
+    , 5000)});
+
+}
