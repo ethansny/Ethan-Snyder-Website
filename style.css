@@ -1,0 +1,652 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* font */
+body {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+
+
+footer {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+/* Universal background and text color */
+
+.EthanText,
+h1,
+.JasonText {
+    color: rgb(0, 129, 84);
+
+}
+
+.EthanText:hover {
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+#home_h1 {
+    display: none;
+}
+
+
+footer {
+    background-color: rgb(0, 129, 84);
+}
+
+/* Navigation Bar for Mobile */
+
+header {
+    border-bottom: black 1px solid;
+}
+
+.header {
+    width: 10vw;
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Sets the manu to be hidden, altered when clicked in Javascript */
+/* Also sets the hamburger to be centered and on the right */
+
+
+.custom-checkbox {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    transition: all 0.3s linear 0s;
+}
+
+.custom-checkbox:hover {
+    transform: scale(1.2);
+
+}
+
+.custom-checkbox img {
+    height: 30px;
+    width: 30px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+#menu-toggle {
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+/* Syles mobile nav to look pretty */
+
+#menu {
+    background-color: rgb(0, 159, 104);
+    position: fixed;
+    right: -100vw;
+    /* Start off-screen */
+    height: 1025vh;
+    width: 100vw;
+    transition: right 0.5s ease-in-out;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    padding: 7%;
+    padding-top: 20%;
+}
+
+.nav ul li {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 35px;
+    padding-left: 2%;
+}
+
+.nav ul li:hover :not(.active a) {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: all 0.25s linear 0s;
+}
+
+.active {
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+}
+
+.active a {
+    color: white;
+}
+
+
+
+/* Styling for content below menu bar */
+
+
+/* Styleing for home page */
+/* Style ethan hero photo */
+
+.ethanphoto {
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    transition: all 0.3s ease 0s;
+}
+
+.ethanphoto:hover {
+    border-color: rgb(0, 129, 84);
+}
+
+
+/* Styling for text below photo */
+
+.intro p {
+    font-size: 200%;
+    width: 70%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#first_p {
+    padding-top: 18%;
+}
+
+
+.intro {
+    border-bottom: black 1px solid;
+}
+
+
+
+/* jcs featured styling */
+
+.jcscontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+
+.jcsphoto {
+    max-width: 100%;
+
+}
+
+.jcstext {
+    background-color: white;
+    color: black;
+    padding: 5%;
+    text-align: center;
+    font-size: 170%;
+}
+
+/* styling for hero photos */
+
+.photos h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 300%;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.photos {
+    background-color: white;
+    margin-bottom: 3%;
+}
+
+.photos-container img {
+    width: 100%;
+    margin-top: 10px;
+    border: solid black 3px;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+
+
+
+/* About Styling */
+
+#about_body {
+    background-color: rgb(75, 75, 75);
+}
+
+
+.about_h1 {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    margin-top: 20%;
+}
+
+.graduate-text {
+    display: grid;
+    padding: 3%;
+    border-radius: 15px;
+    width: 45vw;
+    font-size: 120%;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.text_boxes {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 175.5px 175.5px 175.5px 175.5px;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-top: 50px;
+    z-index: 1;
+}
+
+/* Styling for footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-size: 125%;
+}
+
+.text_boxes div {
+    background-color: rgb(33, 33, 33);
+    height: 175.5px;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+}
+
+.text_boxes div:hover {
+    background-color: rgb(0, 129, 84);
+
+}
+
+/* Styling for JCS design page */
+
+.design_h2 {
+    font-size: 150%;
+    color: black;
+    padding-left: 4%;
+    padding: 5%;
+}
+
+#Ethan_h2 {
+    font-size: 250%;
+    margin-left: 5%;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(0, 159, 104);
+    transition: background-color 0.5s ease 0s;
+    z-index: 1000;
+}
+
+#Ethan_text {
+    display: inline-block;
+}
+
+
+.title {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 7vh;
+    transition: all 0.6s ease 0s;
+    z-index: 500;
+}
+
+#portraits {
+    display: block;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#JCS_p {
+    text-align: left;
+    width: 60%;
+}
+
+
+#menu_mobile,
+#home_mobile {
+    padding: 5px;
+    width: 100%;
+}
+
+#menu_view {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 10px;
+}
+
+.aboutandskills {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+    padding-bottom: 15px;
+    font-size: 120%;
+    color: white;
+    background-color: rgb(0, 0, 71);
+}
+
+
+
+#tools {
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+#tools li:hover {
+    color: rgb(0, 129, 84);
+    transition: all 0.3s ease 0s;
+}
+
+#benefits {
+    font-size: 120%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+}
+
+/* 582App.html styling */
+
+#reach_header {
+    font-size: 250%;
+    padding-left: 20%;
+    padding-bottom: 2%;
+}
+
+#App_overview {
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+    padding-bottom: 2.25%;
+}
+
+#App_overview {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#figma_try_proto {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: flex-end;
+    z-index: 1;
+    font-size: 200%;
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+#figma_try_proto:hover {
+    background-color: rgb(0, 129, 84);
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+#figma_image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.figma_frames {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+#animatedfigmaframes {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(0, 129, 84);
+    border-radius: 10px;
+}
+
+#non-animatedfigmaframes {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(0, 129, 84);
+    border-radius: 10px;
+}
+
+.figma_frames img {
+    transition: opacity 2s ease-in-out;
+}
+
+.frames_background p {
+    padding-bottom: 5%;
+    padding-left: 2.75%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.animate {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.frames_background {
+    background-color: rgb(0, 0, 71)
+}
+
+.figma_frames>img {
+    width: 90%;
+}
+
+#figma_phone_frame_profile {
+    margin-top: 70%;
+}
+
+
+/* styling for featued on projects.html */
+
+
+.descriptive_text {
+    color: white;
+    font-size: 120%;
+}
+
+#projectstitle{
+    background-color: initial;
+}
+
+/* Style for projects.html */
+
+#Desingtitle{
+    text-align: center;
+    font-size: 250%;
+    padding-bottom: 2%;
+}
+
+.design-text{
+    font-size: 140%;
+}
+
+#projectsmain{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='2.2'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#firstbuffer{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+#parallax {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 55px;
+}
+
+#parallax-jcs{
+    grid-column: 1/-1;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 33vh);
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+#paraphoto2{
+    grid-column: 1/6;
+    grid-row:1/4;
+    background-image:url("../images/jcsweb.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 10% 50px;
+}
+
+#paracard2{
+    grid-column: 4/7;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* Styling for para3 */
+
+#paralax-container3{
+    grid-column: 1/-1;
+    grid-row: 6/10;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 35vh);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#paraphoto3{
+    grid-column: 4/8;
+    grid-row:1/6;
+    background-image:url("../images/iPhone_11_News_Following.png");
+    background-repeat: no-repeat;
+    background-position: auto;
+
+}
+
+#paracard3{
+    grid-column: 3/6;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+
+.design-links > div{
+    background-color:rgb(33, 33, 33);
+    color: white;
+    padding: 4%;
+    border-radius: 10px;
+}
+/* Buffer between parralaxing */
+.buffer{
+    height: 20px;
+}
+
+
+.design-links:hover .design-text{
+    background-color: rgb(0, 129, 84);
+    transition: all 0.3s ease 0s;
+}
+
+/* Styling for table/desktop sized screen */
+@media only screen and (min-width:850px) {
+
+    #paraphoto2{
+
+        background-attachment: fixed;
+        background-size: 90%;
+        background-position: 10% 50px;
+    }
+
+
+    /* Styling for para3 */
+
+
+    #paraphoto3{
+        background-attachment: fixed;
+        background-position: 85% 20px;
+    }
+}
