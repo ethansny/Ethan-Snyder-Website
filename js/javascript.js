@@ -130,18 +130,27 @@ if (following) {
 
 
 // Adds alternate speed scrolling for the photos on the design page
+
+window.onload = function() {
+    var initialPosition = window.getComputedStyle(featured_photo2).backgroundPositionY;
+    initialPosition = parseFloat(initialPosition); // Convert from string to number
+    var initialPosition3 = window.getComputedStyle(featured_photo3).backgroundPositionY;
+    initialPosition3 = parseFloat(initialPosition3); // Convert from string to number
+};
+
 if (featured_photo2) {
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
-        var basePosition = window.innerHeight * 0.055;
-        featured_photo2.style.backgroundPosition = 'left ' + (basePosition + scrollPosition * -0.1) + 'px';
+        var newPosition = "left" + (55 +(scrollPosition + .0001) * -0.1) + 'px';
+        console.log(featured_photo2.style.backgroundPosition);
+        featured_photo2.style.backgroundPosition = 0 + newPosition;
     });
 }
 
 if (featured_photo3) {
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
-        var basePosition2 = window.innerHeight * .12;
-        featured_photo3.style.backgroundPosition = 'right ' + (basePosition2 + scrollPosition * -0.1) + 'px';
+        var newPosition3 = "right" + (20 +(scrollPosition + .0001) * -0.1) + 'px';
+        featured_photo3.style.backgroundPosition = 0 + newPosition3;
     });
 }
