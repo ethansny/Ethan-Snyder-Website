@@ -63,13 +63,10 @@ if (hamburger) {
         var scrollPosition = window.scrollY;
         if (scrollPosition < 690) {
             hamburger.style.filter = "invert(0%)";
-            console.log(scrollPosition);
         } else if (scrollPosition > 691 && scrollPosition < 1300) {
             hamburger.style.filter = "invert(100%)";
-            console.log(scrollPosition);
         } else {
             hamburger.style.filter = "invert(0%)";
-            console.log(scrollPosition);
         }
     })
 }
@@ -131,26 +128,26 @@ if (following) {
 
 // Adds alternate speed scrolling for the photos on the design page
 
-window.onload = function() {
-    var initialPosition = window.getComputedStyle(featured_photo2).backgroundPositionY;
-    initialPosition = parseFloat(initialPosition); // Convert from string to number
-    var initialPosition3 = window.getComputedStyle(featured_photo3).backgroundPositionY;
-    initialPosition3 = parseFloat(initialPosition3); // Convert from string to number
-};
+// window.onload = function() {
+//     var initialPosition = window.getComputedStyle(featured_photo2).backgroundPositionY;
+//     initialPosition = parseFloat(initialPosition); // Convert from string to number
+//     var initialPosition3 = window.getComputedStyle(featured_photo3).backgroundPositionY;
+//     initialPosition3 = parseFloat(initialPosition3); // Convert from string to number
+// };
 
-if (featured_photo2) {
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var newPosition = "left" + (55 +(scrollPosition + .0001) * -0.1) + 'px';
-        console.log(featured_photo2.style.backgroundPosition);
-        featured_photo2.style.backgroundPosition = 0 + newPosition;
-    });
-}
+// if (featured_photo2) {
+//     window.addEventListener('scroll', function() {
+//         var scrollPosition = window.scrollY;
+//         var newPosition = "left" + (55 +(scrollPosition + .0001) * -0.1) + 'px';
+//         console.log(featured_photo2.style.backgroundPosition);
+//         featured_photo2.style.backgroundPosition = 0 + newPosition;
+//     });
+// }
 
-if (featured_photo3) {
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var newPosition3 = "right" + (20 +(scrollPosition + .0001) * -0.1) + 'px';
-        featured_photo3.style.backgroundPosition = 0 + newPosition3;
-    });
-}
+// if (featured_photo3) {
+//     window.addEventListener('scroll', function() {
+//         var scrollPosition = window.scrollY;
+//         var newPosition3 = "right" + (20 +(scrollPosition + .0001) * -0.1) + 'px';
+//         featured_photo3.style.backgroundPosition = 0 + newPosition3;
+//     });
+// }
