@@ -570,6 +570,7 @@ footer {
     background-image:url("../images/jcsweb.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 90%;
     background-position: 10% 50px;
 }
 
@@ -593,14 +594,12 @@ footer {
     grid-template-rows: repeat(3, 35vh);
     height: 100vh;
     overflow: hidden;
-    perspective: 1px;
-    transform-style: preserve-3d ;
 }
 
 #paraphoto3{
     grid-column: 4/8;
     grid-row:1/6;
-    background-image:url("../images/iPhone\ 11\ News\ Following.png");
+    background-image:url("../images/iPhone_11_News_Following.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 85% 20px;
