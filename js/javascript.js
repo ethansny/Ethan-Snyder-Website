@@ -133,13 +133,15 @@ if (following) {
 if (featured_photo2) {
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
-        featured_photo2.style.backgroundPosition = 'left ' + (44 + scrollPosition * -0.1) + 'px';
+        var basePosition = window.innerHeight * 0.055;
+        featured_photo2.style.backgroundPosition = 'left ' + (basePosition + scrollPosition * -0.1) + 'px';
     });
 }
 
 if (featured_photo3) {
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
-        featured_photo3.style.backgroundPosition = 'right ' + (200 + scrollPosition * -0.1) + 'px';
+        var basePosition2 = window.innerHeight * .12;
+        featured_photo3.style.backgroundPosition = 'right ' + (basePosition2 + scrollPosition * -0.1) + 'px';
     });
 }

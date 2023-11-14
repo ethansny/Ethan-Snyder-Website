@@ -332,7 +332,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 70px;
+    height: 7vh;
     transition: all 0.6s ease 0s;
     z-index: 500;
 }
@@ -556,7 +556,6 @@ footer {
     grid-template-rows: repeat(3, 33vh);
     height: 100vh;
     overflow-x: hidden;
-    perspective: 1px;
     transform-style: preserve-3d ;
 }
 
@@ -567,7 +566,6 @@ footer {
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: contain scale(2);
 }
 
 #paracard2{
@@ -587,6 +585,7 @@ footer {
     grid-row: 6/10;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 33vh);
     height: 100vh;
     overflow-x: hidden;
     perspective: 1px;
@@ -595,17 +594,16 @@ footer {
 
 #paraphoto3{
     grid-column: 4/8;
-    grid-row:1/9;
+    grid-row:1/4;
     background-image:url("../images/iPhone\ 11\ News\ Following.png");
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain scale(2);
 }
 
 #paracard3{
     grid-column: 3/6;
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: flex;
     flex-direction: column;
     justify-content: center;
