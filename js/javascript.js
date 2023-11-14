@@ -1,3 +1,4 @@
+// Variable Assignments
 var menu = document.getElementById("menu");
 
 var hamburger = document.getElementById("hamburger");
@@ -16,6 +17,12 @@ var Ethan_h2 = document.querySelector("#Ethan_h2");
 
 var Ethan_text = document.getElementById("Ethan_text");
 
+var divs = document.querySelectorAll(".text_boxes div");
+
+var featured_photo3 = document.getElementById('paraphoto3');
+
+var featured_photo2 = document.getElementById('paraphoto2');
+
 // Handles the menue buttons for all pages
 function MenuBtn(hamburgerbtn) {
     if (menu.style.right == "0px") {
@@ -33,7 +40,7 @@ function MenuBtn(hamburgerbtn) {
 }
 
 
-
+// Hambuger menus for each page
 if (hamburger) {
     hamburger.addEventListener("click", function () {
         var scrollPosition = window.scrollY;
@@ -50,7 +57,7 @@ if (hamburger) {
     }
     )
 }
-// Hambuger menus for each page
+
 if (hamburger) {
     window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
@@ -70,20 +77,22 @@ if (hamburger) {
 if (hamburger_jcs) {
     hamburger_jcs.addEventListener("click", function () {
         MenuBtn(hamburger_jcs);
-})}
+    })
+}
 
 if (hamburger_projects) {
     hamburger_projects.addEventListener("click", function () {
         MenuBtn(hamburger_projects);
-})}
+    })
+}
 
 if (hamburger_about) {
     hamburger_about.addEventListener("click", function () {
         MenuBtn(hamburger_about);
-})}
+    })
+}
 
-
-var divs = document.querySelectorAll(".text_boxes div");
+// Adds the independed text movement to the cards on about
 
 divs.forEach(function (div) {
     div.addEventListener("mousemove", function (e) {
@@ -99,19 +108,38 @@ divs.forEach(function (div) {
     });
 });
 
+// Adds the animation for the figma prototype frames
 var following = document.getElementById("following");
 var topstories = document.getElementById("topstories");
 
 if (following) {
-    window.addEventListener("load", function() {
-        this.setInterval(function() {
-        if (following.classList.contains("hidden")) {
-            following.classList.remove("hidden");
-            topstories.classList.add("hidden");
-        } else {
-            following.classList.add('hidden');
-            topstories.classList.remove('hidden');
-        }}
-    , 5000)});
+    window.addEventListener("load", function () {
+        this.setInterval(function () {
+            if (following.classList.contains("hidden")) {
+                following.classList.remove("hidden");
+                topstories.classList.add("hidden");
+            } else {
+                following.classList.add('hidden');
+                topstories.classList.remove('hidden');
+            }
+        }
+            , 5000)
+    });
 
+}
+
+
+// Adds alternate speed scrolling for the photos on the design page
+if (featured_photo2) {
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        featured_photo2.style.backgroundPosition = 'left ' + (44 + scrollPosition * -0.1) + 'px';
+    });
+}
+
+if (featured_photo3) {
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        featured_photo3.style.backgroundPosition = 'right ' + (200 + scrollPosition * -0.1) + 'px';
+    });
 }

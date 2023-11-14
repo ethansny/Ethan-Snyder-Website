@@ -16,7 +16,8 @@
 <body>
     <header>
         <div class="header">
-            <label for="menu-toggle" class="custom-checkbox"><img src="./images/bars-solid.svg" id="hamburger_projects"></label>
+            <label for="menu-toggle" class="custom-checkbox"><img src="./images/bars-solid.svg"
+                    id="hamburger_projects"></label>
             <input type="checkbox" id="menu-toggle" class="custom-checkbox">
             <nav class="nav" id="menu">
                 <ul>
@@ -24,39 +25,53 @@
                     <li id="home_link"><a href="index.html">Home</a></li>
                     <li class="active" id="Design"><a href="projects.html">Design</a></li>
                     <li id="About"><a href="about.html">About</a></li>
-                    <li id="contact"><a href="about.html">Contact</a></li>
+                    <li id="contact"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="projectsmain">
         <div>
-            <div class = "title"><h2 id="Ethan_h2"><a href="index.html">ES</a></h2></div>
-        </div>
-        <div class="featured" id="featured-id">
-            <h2>Design</h2>
-            <div class="design-featured">
-                <a href="jcs_design.html">
-                    <div class="jcscontainer">
-                        <img class="jcsphoto" src="./images/jcsweb.png" alt="photo of Ethan Snyder">
-                        <div class="jcstext">
-                            <h4>Jason Snyder Photographer</h4> <br>Self Employed photographer based in Pittsburgh PA
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="design-featured">
-                <a href="582App.html">
-                    <div class="jcscontainer">
-                        <img class="jcsphoto" src="./images/582App.svg" alt="photo of Ethan Snyder">
-                        <div class="jcstext">
-                            <h4>Jason Snyder Photographer</h4> <br>Self Employed photographer based in Pittsburgh PA
-                        </div>
-                    </div>
-                </a>
+            <div class="title" id="projectstitle">
+                <h2 id="Ethan_h2"><a href="index.html">ES</a></h2>
             </div>
         </div>
-
+        <div id="parallax">
+            <div id="parallax-jcs">
+                <div id="paraphoto2"></div>
+                <div id="paracard2">
+                    <div class="design-links">
+                        <a href="jcs_design.html" class="design-links">
+                            <div class="design-text">
+                                <h4>Jason Snyder Photographer</h4>
+                                <br>
+                                <p>Self Employed photographer based in Pittsburgh PA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="buffer">
+            </div>
+            <div id="paralax-container3">
+                <div id="paraphoto3"></div>
+                <div id="paracard3">
+                    <div class="design-links">
+                        <a href="582App.html" class="design-links">
+                            <div class="design-text">
+                                <h4>reach</h4> <br>
+                                <p>theoretical design project</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="./js/javascript.js"></script>
 </body>
+<footer id="projects-footer">
+    <p>Ethan Snyder &copy; 2023. All Rights Reserved</p>
+</footer>
+
+</html>
