@@ -319,29 +319,66 @@ header {
 
 .text_boxes {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175.5px 175.5px 175.5px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
     align-items: center;
-    row-gap: 10px;
-    padding-top: 45px;
-    z-index: 1;
-    margin-bottom: 20vh;
+    height: 70vh;
+    margin: auto;
+    gap: 10px;
+    margin-bottom : 5vh;
+    margin-top: 5vh;
+}
+
+#box1, #box1_back{
+    grid-column: 1/2;
+    grid-row:1/2;
 }
 
 
 .text_boxes div {
     background-color: #000052;
     height: 175.5px;
+    width: 175.5px;
     border-radius: 15px;
     transition: all 0.4s ease 0s;
+    display: flex;
+    justify-content: center;
 }
 
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-inner div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-inner div:first-child {
+    z-index: 2;
+}
+
+.flip-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.text_boxes .flip-card-inner div:last-child {
+    transform: rotateY(180deg);
+}
 .text_boxes div:hover {
     background-color: RGB(0,129,84);
 
 }
+
+
 
 /* Styling for footer */
 footer {
