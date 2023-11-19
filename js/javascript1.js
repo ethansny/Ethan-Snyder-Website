@@ -88,31 +88,19 @@ if (hamburger_about) {
 
 // Adds the independed text movement to the cards on about
 
-// divs.forEach(function (div) {
-//     div.addEventListener("mousemove", function (e) {
-//         var rect = this.getBoundingClientRect();
-//         var x = e.clientX - rect.left;
-//         var y = e.clientY - rect.top;
-//         var centerX = rect.width / 2;
-//         var centerY = rect.height / 2;
-//         var deltaX = centerX - x;
-//         var deltaY = centerY - y;
-//         var text = this.querySelector(".graduate-text");
-//         text.style.transform = "translate(" + deltaX * 0.1 + "px, " + deltaY * 0.1 + "px)";
-//     });
-
-//     div.addEventListener("mouseout", function () {
-//         var text = this.querySelector(".graduate-text");
-//         text.style.transform = "";
-//     });
-// });
-
-document.querySelectorAll('.flip-card-inner').forEach(function (card) {
-    card.addEventListener("click", function () {
-        this.classList.toggle("flipped");
+divs.forEach(function (div) {
+    div.addEventListener("mousemove", function (e) {
+        var rect = this.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var centerX = rect.width / 2;
+        var centerY = rect.height / 2;
+        var deltaX = centerX - x;
+        var deltaY = centerY - y;
+        var text = this.querySelector(".graduate-text");
+        text.style.transform = "translate(" + deltaX * 0.2 + "px, " + deltaY * 0.2 + "px)";
     });
 });
-
 
 // Adds the animation for the figma prototype frames
 var following = document.getElementById("following");
@@ -132,8 +120,13 @@ if (following) {
             , 5000)
     });
 
-};
+}
 
 
+var featured_photo3 = document.getElementById('paraphoto3');
+var featured_photo2 = document.getElementById('paraphoto2');
 
+// Adds alternate speed scrolling for the photos on the design page
+
+initialPosition = featured_photo2.style.backgroundPositionY;
 
