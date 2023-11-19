@@ -7,7 +7,7 @@ html {
 
 
 .title {
-    padding-top: 12px;
+    padding-top: 0px;
 }
 
 .homebackground {
@@ -326,8 +326,9 @@ header {
     height: 70vh;
     margin: auto;
     gap: 10px;
-    margin-bottom : 5vh;
-    margin-top: 10vh;
+    margin-bottom : 10vh;
+    margin-top: 5vh;
+    font-size: 120%;
 }
 
 #box1, #box1_back{
@@ -751,4 +752,29 @@ footer {
 
 
 /* Styling for table/desktop sized screen */
-@media only screen and (min-width:850px) {}
+@media only screen and (min-width:730px) {
+    .text_boxes div{
+        width: 250px;
+        height: 250px;
+    }
+
+    .text_boxes{
+        height: 80vh;
+        margin-bottom: 20vh;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .text_boxes div{
+        width: 300px;
+        height: 300px;
+        font-size: 130%;
+    }
+
+    .text_boxes{
+        height: 80vh;
+        margin-bottom: 20vh;
+    }
+
+
+}
