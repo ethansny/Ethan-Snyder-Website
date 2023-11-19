@@ -19,6 +19,10 @@ var Ethan_text = document.getElementById("Ethan_text");
 
 var divs = document.querySelectorAll(".text_boxes div");
 
+if ('ontouchstart' in window) {
+    document.body.classList.add('touch-device');
+}
+
 
 // Handles the menue buttons for all pages
 function MenuBtn(hamburgerbtn) {
