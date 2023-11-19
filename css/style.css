@@ -382,6 +382,7 @@ header {
 
 /* Styling for footer */
 footer {
+    margin-top: auto;
     color: white;
     text-align: center;
     padding: 2%;
