@@ -5,7 +5,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .title {
     padding-top: 2%;
 }
@@ -67,7 +66,7 @@ footer {
     transition: all 0.3s ease 0s;
 }
 
-#home_h1 {
+.home_h1 {
     display: none;
 }
 
@@ -565,13 +564,13 @@ footer {
     width: 95%;
     /* height: 100%; */
 }
-
+/*
 #App_overview{
-/* display: flex; */
-/* justify-content: center;
+display: flex;
+justify-content: center;
 height: 50vh;
-margin-bottom: 5vh; */
-}
+margin-bottom: 5vh;
+} */
 
 /* #App_overview {
         padding-left: 2.25%;
