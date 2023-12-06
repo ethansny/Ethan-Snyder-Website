@@ -538,12 +538,15 @@ header {
 
 
 #figma{
-    height: 90vh;
+    height: 95vh;
     width: 90vw;
     padding-left: auto;
     padding-right: auto;
     margin-left: auto;
     margin-right: auto;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
 }
 
 #App_overview{
