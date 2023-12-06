@@ -1,13 +1,7 @@
 // Variable Assignments
 var menu = document.getElementById("menu");
 
-var hamburger = document.getElementById("hamburger");
-
-var hamburger_jcs = document.getElementById("hamburger_jcs");
-
-var hamburger_projects = document.getElementById("hamburger_projects");
-
-var hamburger_about = document.getElementById("hamburger_about");
+var hamburger = document.getElementById("hamburger_menu_id");
 
 var jcsheader = document.querySelector(".title");
 
@@ -59,59 +53,9 @@ if (hamburger) {
     )
 }
 
-if (hamburger) {
-    window.addEventListener("scroll", function () {
-        var scrollPosition = window.scrollY;
-        if (scrollPosition < 690) {
-            hamburger.style.filter = "invert(0%)";
-        } else if (scrollPosition > 691 && scrollPosition < 1300) {
-            hamburger.style.filter = "invert(100%)";
-        } else {
-            hamburger.style.filter = "invert(0%)";
-        }
-    })
-}
 
-if (hamburger_jcs) {
-    hamburger_jcs.addEventListener("click", function () {
-        MenuBtn(hamburger_jcs);
-    })
-}
 
-if (hamburger_projects) {
-    hamburger_projects.addEventListener("click", function () {
-        MenuBtn(hamburger_projects);
-    })
-}
-
-if (hamburger_about) {
-    hamburger_about.addEventListener("click", function () {
-        MenuBtn(hamburger_about);
-    })
-}
-
-// Adds the independed text movement to the cards on about
-
-// divs.forEach(function (div) {
-//     div.addEventListener("mousemove", function (e) {
-//         var rect = this.getBoundingClientRect();
-//         var x = e.clientX - rect.left;
-//         var y = e.clientY - rect.top;
-//         var centerX = rect.width / 2;
-//         var centerY = rect.height / 2;
-//         var deltaX = centerX - x;
-//         var deltaY = centerY - y;
-//         var text = this.querySelector(".graduate-text");
-//         text.style.transform = "translate(" + deltaX * 0.1 + "px, " + deltaY * 0.1 + "px)";
-//     });
-
-//     div.addEventListener("mouseout", function () {
-//         var text = this.querySelector(".graduate-text");
-//         text.style.transform = "";
-//     });
-// });
-
-document.querySelectorAll('.flip-card-inner').forEach(function (card) {
+document.querySelectorAll(".flip-card-inner").forEach(function (card) {
     card.addEventListener("click", function () {
         this.classList.toggle("flipped");
     });

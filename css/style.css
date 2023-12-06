@@ -50,6 +50,15 @@ body {
 
 footer {
     font-family: 'Tilt Neon', sans-serif;
+    background-color: rgb(0, 129, 84);
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-size: 125%;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 3px;
 }
 
 /* Universal background and text color */
@@ -71,10 +80,6 @@ footer {
 }
 
 
-footer {
-    background-color: rgb(0, 129, 84);
-}
-
 /* Navigation Bar for Mobile */
 
 header {
@@ -95,7 +100,7 @@ a {
 /* Also sets the hamburger to be centered and on the right */
 
 
-.custom-checkbox {
+.hamburger_menu {
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -106,12 +111,12 @@ a {
     transition: all 0.3s linear 0s;
 }
 
-.custom-checkbox:hover {
+.hamburger_menu:hover {
     transform: scale(1.2);
 
 }
 
-.custom-checkbox img {
+.hamburger_menu img {
     height: 30px;
     width: 30px;
     display: block;
@@ -296,15 +301,6 @@ header {
 }
 
 
-
-/* styling for hero photos */
-
-
-
-
-
-
-
 /* About Styling */
 
 #about_body {
@@ -396,25 +392,6 @@ header {
     background-color: RGB(0,129,84);
 
 }
-
-
-
-/* Styling for footer */
-footer {
-    margin-top: auto;
-    color: white;
-    text-align: center;
-    padding: 2%;
-    font-size: 125%;
-    border-top-style: solid;
-    border-top-color: black;
-    border-top-width: 3px;
-}
-
-
-
-
-/* Styling for JCS design page */
 
 #jcs_photo_first {
     padding-bottom: 4%;
@@ -558,30 +535,21 @@ footer {
 
 
 
-#figma{
-    margin-left: 2vw;
-    margin-right: 2vw;
-    width: 95%;
-    /* height: 100%; */
-}
-/*
-#App_overview{
-display: flex;
-justify-content: center;
-height: 50vh;
-margin-bottom: 5vh;
-} */
 
-/* #App_overview {
-        padding-left: 2.25%;
-    padding-right: 2.25%;
-    padding-bottom: 2.25%;
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
+
+#figma{
+    height: 90vh;
+    width: 90vw;
+    padding-left: auto;
+    padding-right: auto;
     margin-left: auto;
     margin-right: auto;
-} */
+}
+
+#App_overview{
+    display: flex;
+    justify-content: center;
+}
 
 #figma_try_proto {
     grid-column: 1/2;
@@ -784,7 +752,8 @@ margin-bottom: 5vh;
 
 
 /* Styling for table/desktop sized screen */
-@media only screen and (min-width:730px) {
+@media only screen and (min-width:768px) {
+
     .text_boxes div{
         width: 250px;
         height: 250px;
@@ -794,9 +763,75 @@ margin-bottom: 5vh;
         height: 80vh;
         margin-bottom: 20vh;
     }
-}
+    /* Tablet sized home page */
+    .links{
+        display: flex;
+    }
+    .designh2, .abouth2, .contacth2{
+        background-size: initial;
+        background-repeat: no-repeat;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
 
-@media only screen and (min-width:1025px) {
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+    #first_p{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    .ethanphoto{
+        grid-column: 1/2;
+        grid-row: 2/4;
+        width:80%;
+        height: 100%;
+    }
+
+    #second_p{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    /* Project styling */
+    #parallax{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 30vh;
+        margin-top: 12vh;
+    }
+
+    #parallax-jcs{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #paralax-container3{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .frames_background{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    
+    }
+    /* JCS Styling */
+    .jcs_container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10vh;
+    }
+}
+@media only screen and (min-width:1024px) {
     .text_boxes div{
         width: 300px;
         height: 300px;
