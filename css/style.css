@@ -17,14 +17,11 @@
 }
 
 
-.designh2_link:focus, .abouth2_link:focus{
-    color: RGB(0, 214, 139);
-    font-size: 250%;
-}
 
-.designh2_link:hover, .abouth2_link:hover{
+
+.designh2_link:hover, .abouth2_link:hover, .designh2_link:focus, .abouth2_link:focus{
     color: RGB(0, 214, 139);
-    font-size: 250%;
+    transform: scale(1.2);
 }
 
 html {
@@ -35,7 +32,7 @@ html {
     padding-top: 2%;
 }
 
-.touch-device .innerdiv h2{
+.touch-device .designh2 a, .touch-device .abouth2 a {
     animation: pulse 5s infinite;
 }
 
@@ -45,8 +42,8 @@ html {
         color: white;
     }
     50% {
-        transform: scale(1.1);
-        color: RGB(0, 214, 139);
+        transform: scale(1.2);
+        color: RGB(0, 214, 139)
     }
     100% {
         transform: scale(1);
@@ -124,6 +121,7 @@ a {
 
 
 .designh2_link, .abouth2_link{
+    display: inline-block;
     color: white;
     font-size: 200%;
     text-decoration: none;
