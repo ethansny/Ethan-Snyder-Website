@@ -1,7 +1,14 @@
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: rgb(0, 25, 47);
+}
+
+#stars_div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 25, 47);
+    z-index: -1;
 }
 
 @keyframes key1 {
