@@ -19,6 +19,7 @@ if ('ontouchstart' in window) {
 
 
 // Handles the menue buttons for all pages
+
 function MenuBtn(hamburgerbtn) {
     if (menu.style.right == "0px") {
         menu.style.right = "-100vw";
