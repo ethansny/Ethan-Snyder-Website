@@ -72,9 +72,12 @@ html {
 
 /* font */
 body {
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+h1, h2, h3, li {
+    font-family: 'Tilt Neon', sans-serif;
+}
 
 
 footer {
@@ -125,7 +128,7 @@ a {
     color: black;
 }
 
-
+ 
 .designh2_link, .abouth2_link{
     display: inline-block;
     color: white;
@@ -136,7 +139,6 @@ a {
 
 /* Sets the manu to be hidden, altered when clicked in Javascript */
 /* Also sets the hamburger to be centered and on the right */
-
 
 .hamburger_menu {
     display: flex;
@@ -159,6 +161,7 @@ a {
     width: 30px;
     display: block;
     transition: all 0.3s ease 0s;
+
 }
 
 #menu-toggle {
@@ -521,18 +524,78 @@ header {
 }
 
 .aboutandskills {
-    display: flex;
-    flex-direction: horizontal;
-    justify-content: space-between;
+    width: 90%;
     padding-top: 15px;
-    padding-left: 2.25%;
-    padding-right: 2.25%;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 15px;
-    font-size: 120%;
-    color: white;
+    font-size: 130%;
+    color: black;
 }
 
+.aboutandskills h2 {
+    font-size: 150%;
+    text-align: center;
+    padding-top: 5%;
+}
+.gameplay-video{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+}
 
+.paper_prototypes{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5% 0 5% 0;
+    gap: 10px;
+    width: 100vw;
+}
+
+.paper_prototypes > img {
+    width: 45%;
+    height: auto;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#gameplay{
+    width: 95%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#social_logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 2% 0 2% 0;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#Discord-logo{
+    width: 100%;
+    height: 100%;
+}
+
+#X-logo{
+    width: 25%;
+    height: auto;
+}
+
+.whitetext{
+    color: white;
+
+}
 
 
 #tools {
@@ -587,9 +650,29 @@ header {
     border-style: solid;
 }
 
+
 #App_overview{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#reachhome{
+    width: 85%;
+    padding: 3%;
+    height: auto;
+}
+
+.link-to-proto {
+    color: white;
+    text-align: center;
+}
+
+#reach-overview p{
+    font-size: 200%;
+    padding: 2%;
 }
 
 #figma_try_proto {
@@ -627,11 +710,16 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
     column-gap: 20px;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.frames_background div {
     margin-bottom: 5%;
 }
 
@@ -653,11 +741,7 @@ header {
     transition: opacity 2s ease-in-out;
 }
 
-.frames_background p {
-    padding-bottom: 5%;
-    padding-left: 2.75%;
-    color: white;
-}
+
 
 .hidden {
     opacity: 0;
@@ -668,8 +752,28 @@ header {
     grid-row: 1/2;
 }
 
-.frames_background {
-    background-color: rgb(0, 0, 71)
+
+
+.frames_background p {
+    padding-bottom: 5%;
+    margin-left: 2%;
+    color: white;
+}
+
+.descriptive_text{
+    margin-left: 0%;
+}
+#totop{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#totopcontain{
+    text-align: center;
+    padding-bottom: 10%;
 }
 
 .figma_frames>img {
@@ -789,12 +893,19 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-
+#reachmain h2{
+    font-size: 200%;
+    text-align: center;
+    padding: 2% 0 2% 0;
+}
 
 
 /* Styling for table/desktop sized screen */
 @media only screen and (min-width:768px) {
 
+    p {
+        font-size: 120%;
+    }
     .text_boxes div{
         width: 250px;
         height: 250px;
@@ -858,12 +969,12 @@ header {
 
     .frames_background{
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-top: 5%;
         padding-bottom: 5%;
-    
+     */
     }
     /* JCS Styling */
     .jcs_container{
@@ -871,8 +982,57 @@ header {
         flex-direction: row;
         padding-bottom: 10vh;
     }
+
+    #App_overview{
+        display: flex;
+        flex-direction: row;
+    }
+    #reachhome{
+        width: 40%;
+        padding: 3%;
+        height: auto;
+    }
+
+    #reachmain h2{
+        font-size: 200%;
+        text-align: center;
+        padding: 2% 0 2% 0;
+    }
+    .aboutandskills {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutandskills > div {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .frames_background{
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .frames_background div {
+        width: 90%;
+    }
+    #personas{
+        display: initial;
+    }
+
 }
 @media only screen and (min-width:1024px) {
+    p {
+        font-size: 100%;
+    }
+    
     .text_boxes div{
         width: 300px;
         height: 300px;
@@ -882,6 +1042,9 @@ header {
     .text_boxes{
         height: 80vh;
         margin-bottom: 20vh;
+    }
+    #reachmain{
+        font-size: 145%;
     }
 
 

@@ -1,84 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Designs</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Designs</title>
+    </head>
 
-<body>
-    <a class="skip" href="#reachmain">Skip to main content</a>
-    <header>
-        <div class="header">
-            <div class="hamburger_menu"><img id="hamburger_menu_id" src="./images/bars-solid.svg" alt="hamburger menu"></div>
-            <nav class="nav" id="menu">
-                <ul>
-                    <li id="Ethan_menu"><a href="index.html">Ethan Snyder</a></li>
-                    <li id="home_link"><a href="index.html">Home</a></li>
-                    <li class="active" id="Design"><a href="projects.html">Design</a></li>
-                    <li id="About"><a href="about.html">About</a></li>
-                    <li id="javascript"><a href="javascript.html">Javascript</a></li>
-                    <!-- <li id="contact"><a href="about.html">Contact</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="reachmain">
-        <h1 class="home_h1">Reach Design</h1>
-        <div class="reach_background">
-            <div class="title">
-                <h2 id="Ethan_h2"><a href="index.html">ES</a></h2>
-            </div>
-            <h2 class="design_h2" id="reach_header">re<span class="JasonText">a</span>ch</h2>
-            <div id="App_overview">
-                <iframe title="reach Figma prototype" id = "figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLTMOYVa95CLdg4bjE7MdOr%2F582-App%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D3-112%26viewport%3D216%252C700%252C0.2%26t%3DoCCOY1CLkOUQwofN-1%26scaling%3Dscale-down%26starting-point-node-id%3D3%253A112%26mode%3Ddesign" allowfullscreen></iframe>
-            </div>
-            <div class="aboutandskills">
-                <p>reach is a theoretical social media/news application designed to connect video game developers with
-                    players</p>
-                <div id="tools">
-                    <ol>
-                        <li>figma</li>
-                        <li>paper prototyping</li>
-                    </ol>
+    <body>
+        <a class="skip" href="#reachmain">Skip to main content</a>
+        <header>
+            <div class="header">
+                <div class="hamburger_menu"><img id="hamburger_menu_id"
+                        src="./images/bars-solid.svg" alt="hamburger menu">
                 </div>
+                <nav class="nav" id="menu">
+                    <ul>
+                        <li id="Ethan_menu"><a href="index.html">Ethan
+                            Snyder</a></li>
+                        <li id="home_link"><a href="index.html">Home</a></li>
+                        <li class="active" id="Design"><a
+                                href="projects.html">Design</a></li>
+                        <li id="About"><a href="about.html">About</a></li>
+                        <li id="javascript"><a
+                                href="javascript.html">Javascript</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
+        <main id="reachmain">
+            <h1 class="home_h1">Reach Design</h1>
+            <div class="reach_background">
+                <div class="title">
+                    <h2 id="Ethan_h2"><a href="index.html">ES</a></h2>
+                </div>
+                <h2 class="design_h2" id="reach_header">re<span
+                        class="JasßonText">a</span>ch</h2>
+                <div id="App_overview">
+                    <div id="reach-overview">
+                        <p>A social media/news app to connect
+                            game developers with players.</p>
+                    </div>
+                    <img id="reachhome" src="./images/582_Home_screen.png"
+                        alt="reach home page">
+                </div>
+                <h2>Problem</h2>
+                <div class="aboutandskills">
+                    <div class = "text_container">
+                        <p>Video games have evolved significantly with
+                            advancements in technology and internet access.</p>
+                        <br>
+                        <p>Live Service games like Apex: Legends and Fortnight,
+                            which change over time, are gaining
+                            popularity.
+                        </p>
+                        <br>
+                        <p>
+                            Longtime players, having invested substantial time
+                            and money, expect clear communication with the
+                            game's creators and representatives.
+                        </p>
+                    </div>
+                
+                    <br>
+                    <div class="gameplay-video">
+                        <video id="gameplay" muted autoplay loop>
+                            <source
+                                src="./images/apex_clip.mp4"
+                                type="video/mp4">
+                            Your browser does not support the video tag.
+                    </div>
+                </div>
+                <div class = "aboutandskills">
+                <p>
+                    Game developers currently use social media, email
+                    notifications, and in-game messages to communicate
+                    with players. However, these methods have drawbacks.
+                    Emails and in-game messages are one-way, and players
+                    can't respond directly.This frustrates both
+                    developers and players. How can two-way
+                    communication be promoted while safeguarding against
+                    harassment?</p>
+                </div>
+                <h2>Competitive Analysis</h2>
+                <div class = "aboutandskills">
+                    <div id="social_logos">
+                        <img id="X-logo"
+                            src="images/X_logo_2023_(white).png">
+                        <img id="Discord-logo"
+                            src="./images/discord-logo-white.png">
+                    </div>
+                    <div><p>To understand existing solutions
+                        that
+                        address this
+                        issue, I conducted a competitive analysis.
+                        Identified competitors include social media
+                        platforms like X (previously Twitter), Discord,
+                        email notifications, and custom game apps.</p></div>
+                </div>
+                <div  class = "aboutandskills">
+                    <p>These
+                        options generally fall into two categories: overly
+                        restrictive, lacking safeguards, or insufficiently
+                        facilitating two-way communication.</p>
+                </div>
+                <h2 class="whitetext">Personas</h2>
+                <div class = "aboutandskills">
+                        <p class="whitetext"><br>Due to the scope of this
+                            project,
+                            personas were used to understand and design for
+                            the
+                            user
+                            perspective.</p>
+                        <br>
+                </div>
+                <h2 class="whitetext">Paper and Lo-Fi
+                    Prototypes</h2>
+                <div class = "aboutandskills">
+                    <div><p class="whitetext">
+                    Creating paper and low-fidelity digital
+                    prototypes is crucial in our design process for
+                    rapid iteration. Paper prototypes, made with
+                    basic materials like paper and adhesive, allow
+                    us to quickly visualize and refine concepts. 
+                    <p></div>
+                    <div class="paper_prototypes">
+                        <img id="home_paper"
+                            src="./images/home_paper.jpg"
+                            alt="paper prototype">
+                        <img id="news_paper"
+                            src="./images/news_paper.jpg"
+                            alt="paper prototype">
+                    </div>
 
-        <div class="frames_background">
-            <div>
-            <div class="figma_frames" id="animatedfigmaframes">
-                <img id="figma_phone_frame_profile" src="./images/iPhone 11 Render Profile.png" alt="reach profile page render">
-                <img class="animate" id="topstories" src="./images/iPhone 11 Top Stories.png" alt="reach top stories page render">
-                <img class="animate" id="following" src="./images/iPhone_11_News_Following.png"alt="reach following page render">
-            </div>
-            <p class="descriptive_text">In the modern era, players expect communication from developers of games they
-                love. Current methods use
-                existing social media, but this has led to developers being harrassed</p>
-            </div>
-            <div>
-            <div class="figma_frames" id="non-animatedfigmaframes">
-                <img id="figma_phone_frame_home" src="./images/reach_home_page.png" alt="reach home page render">
-                <img id="figma_phone_frame_comment" src="./images/reach_comment.png" alt="reach comment page render">
-            </div>
-            <p class="descriptive_text">This platorm would consolidate social media communication, game functionality,
-                and news into one
-                loaction. Posting and commenting requires linking your account to your game profile to give methods to
-                punish bad actors</p>
-            </div>
-        </div>
-    </main>
-    <script src="./js/javascript.js"></script>
-</body>
-<footer>
-    <p id="jcs_footer">Ethan Snyder &copy; 2023. All Rights Reserved</p>
-</footer>
+                </div>
+                <div class = "aboutandskills">
+                                        <p class="whitetext"> Creating low-fidelity
+                        digital prototypes from paper
+                        prototypes, allow for user input on
+                        design flow without significant time
+                        investment.
+                        <br>
+                    </p>
+                </div>
+                <h2 class="whitetext">Hi-Fi Prototype</h2>
+                            <div class = "aboutandskills">
+                                <br>
+                                <p class="whitetext"> The creation of a Hi
+                                    Fidelity Prototype allows for users,
+                                    developers, and stakeholds a more complete
+                                    visualization of how the finished product
+                                    will look and behave.
+                                <p>
+                                        <br>
+                                        <a class="link-to-proto" target="_blank"
+                                            href="https://www.figma.com/proto/LTMOYVa95CLdg4bjE7MdOr/582-App?page-id=0%3A1&type=design&node-id=3-112&viewport=338%2C415%2C0.16&t=RqPnVzUjMUtMRb2C-1&scaling=scale-down&starting-point-node-id=3%3A112&mode=design">Click
+                                            here to explore the Prototype</a>
+                                        <br>
+                                        <br>
+                            </div>
+                                    <div class= "frames_background" >
+                                        <div>
+                                            <div class="figma_frames"
+                                                id="animatedfigmaframes">
+                                                <img
+                                                    id="figma_phone_frame_profile"
+                                                    src="./images/iPhone 11 Render Profile.png"
+                                                    alt="reach profile page render">
+                                                <img class="animate"
+                                                    id="topstories"
+                                                    src="./images/iPhone 11 Top Stories.png"
+                                                    alt="reach top stories page render">
+                                                <img class="animate"
+                                                    id="following"
+                                                    src="./images/iPhone_11_News_Following.png"
+                                                    alt="reach following page render">
+                                            </div>
+                                            <p class="descriptive_text aboutandskills">In the
+                                                modern
+                                                era, players
+                                                expect communication from
+                                                developers
+                                                of
+                                                games
+                                                they
+                                                love. Current methods use
+                                                existing social media, but this
+                                                has
+                                                led
+                                                to
+                                                developers
+                                                being harrassed</p>
+                                        </div>
+                                        <div>
+                                            <div class="figma_frames"
+                                                id="non-animatedfigmaframes">
+                                                <img id="figma_phone_frame_home"
+                                                    src="./images/reach_home_page.png"
+                                                    alt="reach home page render">
+                                                <img
+                                                    id="figma_phone_frame_comment"
+                                                    src="./images/reach_comment.png"
+                                                    alt="reach comment page render">
+                                            </div>
+                                            <p class="descriptive_text aboutandskills">This
+                                                platorm
+                                                would
+                                                consolidate
+                                                social media communication, game
+                                                functionality,
+                                                and news into one
+                                                loaction. Posting and commenting
+                                                requires linking
+                                                your
+                                                account to your game profile to
+                                                give
+                                                methods
+                                                to
+                                                punish bad actors</p>
+                                           
 
-</ht
+                                        </div>
+                                    </div>
+                                    <div id=totopcontain><a id="totop"
+                                        href="#reachmain">Back to
+                                        Top</a>
+                                </div>
+                                </div>
+                            </main>
+                            <script src="./js/javascript.js"></script>
+                        </body>
+                        <footer>
+                            <p id="jcs_footer">Ethan Snyder &copy; 2024. All
+                                Rights
+                                Reserved</p>
+                        </footer>
+
+                    </html>

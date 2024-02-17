@@ -1,17 +1,17 @@
 // Variable Assignments
-var menu = document.getElementById("menu");
+const menu = document.getElementById("menu");
 
-var hamburger = document.getElementById("hamburger_menu_id");
+const hamburger = document.getElementById("hamburger_menu_id");
 
-var jcsheader = document.querySelector(".title");
+const jcsheader = document.querySelector(".title");
 
-var jasonsnyder_name = document.querySelector(".JasonText");
+const jasonsnyder_name = document.querySelector(".JasonText");
 
-var Ethan_h2 = document.querySelector("#Ethan_h2");
+const Ethan_h2 = document.querySelector("#Ethan_h2");
 
-var Ethan_text = document.getElementById("Ethan_text");
+const Ethan_text = document.getElementById("Ethan_text");
 
-var divs = document.querySelectorAll(".text_boxes div");
+const divs = document.querySelectorAll(".text_boxes div");
 
 if ('ontouchstart' in window) {
     document.body.classList.add('touch-device');
@@ -64,11 +64,13 @@ document.querySelectorAll(".flip-card-inner").forEach(function (card) {
 
 
 // Adds the animation for the figma prototype frames
-var following = document.getElementById("following");
-var topstories = document.getElementById("topstories");
+const following = document.getElementById("following");
+const topstories = document.getElementById("topstories");
+
+
 
 if (following) {
-    window.addEventListener("load", function () {
+    window.addEventListener("load", () => {
         this.setInterval(function () {
             if (following.classList.contains("hidden")) {
                 following.classList.remove("hidden");
@@ -78,7 +80,7 @@ if (following) {
                 topstories.classList.remove('hidden');
             }
         }
-            , 5000)
+            , 2800)
     });
 
 };

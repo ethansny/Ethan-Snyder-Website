@@ -7,9 +7,9 @@ let sizes = ["5px", "10px", "10px", "15px", "15px", "25px"];
 let animation = ["key1", "key2", "key3"];
 div = document.querySelector('#stars_div');
 
-window.addEventListener('mousemove', (event) => {
-    let xPosition = event.clientX;
-    let yPosition = event.clientY;
+function handleMove(event) {
+    let xPosition = event.clientX || event.touches[0].clientX;
+    let yPosition = event.clientY || event.touches[0].clientY;
 
     if (lastPosition.x !== null && lastPosition.y !== null) {
         let dx = xPosition - lastPosition.x;
@@ -23,14 +23,17 @@ window.addEventListener('mousemove', (event) => {
     img.style.position = 'absolute';
     img.style.width = sizes[Math.floor(Math.random() * sizes.length)];
     img.style.color = colors[Math.floor(Math.random() * colors.length)];
-    div.appendChild(img);
+    document.body.appendChild(img);
     img.classList.add(animation[Math.floor(Math.random() * animation.length)])
-    img.style.left = event.clientX + 'px';
-    img.style.top = event.clientY + 'px';
+    img.style.left = xPosition + 'px';
+    img.style.top = yPosition + 'px';
 
     setTimeout(() => {
         img.remove();
     }, 2000);
 
     lastPosition = { x: xPosition, y: yPosition };
-});
+}
+
+window.addEventListener('mousemove', handleMove);
+window.addEventListener('touchmove', handleMove);
