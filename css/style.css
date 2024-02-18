@@ -1,6 +1,11 @@
 /* All Gradient background by:*/
 /* SVGBackgrounds.com */
 
+p {
+    line-height: 1.5;
+    text-indent: 2em;
+}
+
 #stars{
     width: 100vw;
     height: 100vh;
@@ -443,18 +448,23 @@ header {
     color: black;
     padding-left: 4%;
     padding: 5%;
+    text-align: left !important;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
 }
 
 #Ethan_h2 {
 
-    font-size: 250%;
+    font-size: 150%;
     width: fit-content;
     margin-left: 5%;
-    padding: 2px;
+    padding: 2px !important;
     border-radius: 5px;
     background-color: rgb(0, 159, 104);
     transition: background-color 0.5s ease 0s;
     z-index: 1000;
+    border-bottom: none !important;
 }
 
 #Ethan_text {
@@ -654,9 +664,22 @@ header {
 #App_overview{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 8%;
     margin-right: 8%;
+}
+
+
+
+#reach-overview li {
+line-height: 1.5;
+font-size: 120%;
+font-family: 'Roboto', sans-serif; 
+margin-left: 15%;
+}
+
+ul{
+    list-style-type: circle;
 }
 
 #reachhome{
@@ -671,8 +694,9 @@ header {
 }
 
 #reach-overview p{
-    font-size: 200%;
+    font-size: 170%;
     padding: 2%;
+    text-indent: 0;
 }
 
 #figma_try_proto {
@@ -766,7 +790,7 @@ header {
 #totop{
     color: rgb(0, 0, 0);
     background-color: white;
-    padding: 5px;
+    padding: 20px;
     border-radius: 10px;
     font-weight: bolder;
 }
@@ -896,15 +920,15 @@ header {
 #reachmain h2{
     font-size: 200%;
     text-align: center;
-    padding: 2% 0 2% 0;
 }
+
 
 
 /* Styling for table/desktop sized screen */
 @media only screen and (min-width:768px) {
 
     p {
-        font-size: 120%;
+        font-size: 100%;
     }
     .text_boxes div{
         width: 250px;
@@ -994,15 +1018,21 @@ header {
     }
 
     #reachmain h2{
-        font-size: 200%;
-        text-align: center;
-        padding: 2% 0 2% 0;
+        font-size: 250%;
+        text-align: left;
+        padding-left: 5%;
+        padding: 10px 10px 5px 10px;
+        margin: 2%;
+        border-bottom-color:black;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
     }
+
     .aboutandskills {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         max-width: 90vw;
         margin-left: auto;
         margin-right: auto;
@@ -1030,7 +1060,7 @@ header {
 }
 @media only screen and (min-width:1024px) {
     p {
-        font-size: 100%;
+        font-size: 90%;
     }
     
     .text_boxes div{
@@ -1044,7 +1074,19 @@ header {
         margin-bottom: 20vh;
     }
     #reachmain{
-        font-size: 145%;
+        font-size: 110%;
+    }
+    #reachmain body{
+        font-size: 110%;
+    }
+
+    #reachhome {
+        height: 70vh;
+        width: auto;
+    }
+
+    .aboutandskills{
+        max-width: 75vw;
     }
 
 
