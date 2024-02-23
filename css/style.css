@@ -937,6 +937,49 @@ ul{
 
 /* Styling for table/desktop sized screen */
 @media only screen and (min-width:768px) {
+    .hamburger_menu {
+        display: none;
+    }
+
+    #Ethan_menu {
+        display: none;
+    }
+
+    #menu{
+    background-color: transparent;
+    position: initial;
+    /* right: 0; */
+    transition: none;
+    height: inherit;
+    }
+
+    header .header{
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        border: 0;
+        margin: 0;
+        padding: 0%;
+        width: 100%;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100vw;
+    }
+    .nav ul li {
+        padding: 1.5%;
+    }
+
+    .nav ul {
+        display: flex;
+        width: 50vw;
+        flex-direction: row;
+        padding: 2% 5% 2% 5%;
+        justify-content: space-between;
+    }
+
 
     p {
         font-size: 100%;
