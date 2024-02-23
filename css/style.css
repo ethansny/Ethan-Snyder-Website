@@ -3,7 +3,6 @@
 
 p {
     line-height: 1.5;
-    text-indent: 2em;
 }
 
 #stars{
@@ -453,10 +452,13 @@ header {
     border-bottom-color: black;
     border-bottom-width: 2px;
 }
+#jcs_h2{
+    border: none;
+}
 
 #Ethan_h2 {
 
-    font-size: 150%;
+    font-size: 200%;
     width: fit-content;
     margin-left: 5%;
     padding: 2px !important;
@@ -500,6 +502,7 @@ header {
 #JCS_p {
     text-align: left;
     width: 60%;
+    color: white;
 }
 
 
@@ -607,11 +610,19 @@ header {
 
 }
 
+.anything{
+    color: white;
+}
 
 #tools {
     display: flex;
     text-align: right;
     align-items: center;
+}
+
+#jcs_container_stuff{
+    display: flex;
+    flex-direction: row;
 }
 
 #tools li:hover {
